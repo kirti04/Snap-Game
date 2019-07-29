@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#4CAF50">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose Matching condition: "
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/ch_face"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Face Value" />
+
+            <RadioButton
+                android:id="@+id/ch_suit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Suit Value" />
+
+            <RadioButton
+                android:id="@+id/ch_both"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Both          " />
+        </RadioGroup>>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pack of cards: " />
+
+        <EditText
+            android:id="@+id/ed_pack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="START" />
+    </LinearLayout>
+
+
+</RelativeLayout>
